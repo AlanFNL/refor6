@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.ror {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(83,2,80);
+    background: linear-gradient(224deg, rgba(83,2,80,1) 0%, rgb(77, 4, 119) 50%, rgba(44,0,71,1) 100%);
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    overflow: hidden;
+}
+
+.h1_verticals {
+    
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    left: 100px;
+    right: 0;
+    top: 200%;
+    background: #82037D;
+background: linear-gradient(to right, #82037D 53%, #50057D 95%, #2C0047 100%);
+-webkit-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+    font-family: 'Poppins';
+    font-weight: 600;
+    margin: auto;
+    font-size: 19rem;
+    opacity: .2;
+    animation: textclip 2s linear infinite;
+}
+
+.h2_verticals {
+    
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    left: 100px;
+    right: 0;
+    top: 270%;
+    background: #82037D;
+background: linear-gradient(to right, #82037D 53%, #50057D 95%, #2C0047 100%);
+-webkit-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+
+    font-family: 'Poppins';
+    font-weight: 600;
+    margin: auto;
+    font-size: 19rem;
+    
+    animation: textclip 2s linear infinite;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+    
+}
+
+.container_verticals {
+    position: relative;
+    width: 1400px;
+    display:flex;
+    gap: 5rem;
+    margin: 20px;
+    box-shadow: 130px;
+}
+
+.container_verticals .card_verticals {
+    position: relative;
+    height: 250px;
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    
+    width: 40%;
+    margin: 10px 0;
+    box-shadow: 130px;
+}
+
+.container_verticals .card_verticals .imgBx {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: rgb(83,2,80);
+background: linear-gradient(247deg, rgba(83,2,80,1) 0%, rgba(80,5,125,1) 50%, rgba(44,0,71,1) 100%);
+   border-radius: 10px;
+   filter: blur(1px);
+   z-index: 5;
+   box-shadow:  10px 10px 22px #9d09c2;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+   transition: 0.3s ease-in-out;
+}
+
+.container_verticals .card_verticals:hover .imgBx {
+    width: 150px;
+    height: 150px;
+    left: -75px;
+    top: calc(50% - 75px);
+    box-shadow: none;
+    transition: 0.3s ease-in-out;
+    background: #7a0a96;
+}
+
+.container_verticals .card_verticals .imgBx:before {
+   content: attr(data-text);
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   text-align: center;
+   font-size: 6em;
+   color: rgba(247, 13, 255, 0.055);
+   font-weight: 700;
+}
+
+.container_verticals .card_verticals .imgBx .img_verticals 
+{
+    max-width: 100px;
+    transition: 0.2s ease-in-out;
+    
+}
+
+.container_verticals .card_verticals:hover .imgBx .img_verticals 
+{
+    max-width: 75px;
+
+}
+
+.container_verticals .card_verticals .content_verticals 
+{
+  position: absolute;
+  right: 0;
+  width: calc(100% - 75px);
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_verticals .card_verticals .content_verticals .h3_verticals 
+{
+  margin-bottom: 5px;
+  font-size: 24px;
+}
+
+.container_verticals .card_verticals .content_verticals .a_verticals 
+{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: #333;
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+@media (max-width: 992px) 
+{
+    .container_verticals
+    {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container_verticals .card_verticals
+    {
+        width: 400px;
+    }
+}
+
+@media (max-width: 768px) 
+{
+    .container_verticals .card_verticals
+    {
+        max-width: 300px;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .container_verticals .card_verticals .imgBx
+    {
+        position: relative;
+    }
+
+    .container_verticals .card_verticals .imgBx, 
+    .container_verticals .card_verticals:hover .imgBx
+    {
+        width: 100%;
+        height: 200px;
+        left: 0;
+    }
+
+    .container_verticals .card_verticals .imgBx .img_verticals, 
+    .container_verticals .card_verticals:hover .imgBx .img_verticals
+    {
+      max-width: 100px;
+    }
+
+    .container_verticals .card_verticals .content_verticals
+    {
+        position: relative;
+        width: 100%;
+    }
+} 
+

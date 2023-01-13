@@ -1,0 +1,283 @@
+.body_factory
+{
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 0 0 0;
+    
+}
+
+.picture_factory
+{   
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.pic_factory
+{   
+   
+    position: absolute;
+    height: 100vh;
+    top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+    background-attachment: fixed;
+  background-position: 20% 20%;
+    background-image: url(../assets/nft.jpg);
+    background-size: cover;
+}
+
+.container_factory
+{   
+    display: flex;
+    position: flex;
+    display: grid;
+    margin-top: 10%;
+    margin-right: 5%;
+    margin-left: auto;
+    background: rgb(83,2,80);
+background: linear-gradient(247deg, rgba(83,2,80,1) 0%, rgba(80,5,125,0.75) 50%, rgba(44,0,71,0.5) 100%);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    
+    width: 500px;
+    height: 620px;
+    gap: -1rem;
+}
+
+.h2_factory
+{   
+    
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 47px;
+    font-family: 'Poppins';
+    font-weight: 800;
+    margin: 40px;
+}
+
+.p_factory
+{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    margin: 40px;
+}
+
+.btn_factory {
+    text-decoration: none;
+    cursor: pointer;
+    padding: 15px 40px;
+    background: rgb(230,0,221);
+    background: linear-gradient(190deg, rgb(151, 5, 219) 0%, rgba(80,5,125,1) 50%, rgb(119, 4, 190) 100%);
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    transition: all 0.3s;
+    color: #fff;
+    border-radius: 10px;
+    font-size: "Poppins";
+    font-weight: bold;
+
+}
+
+.btn_factory:hover {
+    box-shadow:  0px 5px 22px #9d09c2;
+    filter: brightness(1.2);
+    
+}
+
+.modal_close {
+    margin-top: 20px;
+    
+    margin-left: 135%;
+    
+}
+.btn_factory2 {
+    text-decoration: none;
+    cursor: pointer;
+    padding: 15px 40px;
+    background: rgb(230,0,221);
+    background: linear-gradient(190deg, rgb(151, 5, 219) 0%, rgba(80,5,125,1) 50%, rgb(119, 4, 190) 100%);
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    transition: all 0.3s;
+    color: #fff;
+    border-radius: 10px;
+    font-size: "Poppins";
+    font-weight: bold;
+
+}
+
+.btn_factory2:hover {
+    color: gray;
+    box-shadow:  0px 5px 22px #9d09c2;
+    filter: brightness(1.2);
+    
+}
+
+
+.modal_container_f {
+  display: flex;
+  z-index: 999999999999999999;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: calc(100vh - 2rem);
+  transform: scale(0);
+  transition: all 0.3s;
+}
+
+.show {
+    pointer-events: auto;
+    opacity: 1;
+    transform: scale(1);
+    transition: all 0.3s;
+}
+
+.modal_f {
+    background: rgb(83,2,80);
+background: linear-gradient(123deg, rgba(83,2,80,1) 0%, rgba(80,5,125,1) 50%, rgba(44,0,71,1) 100%);
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width: 100%;
+    padding: 30px 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px;
+    text-align: center;
+}
+
+.container_nfts {
+    width: 100%;
+    height: 100%;
+    padding: 0 6%;
+}
+
+.container_nfts .h1_nfts {
+    text-align: center;
+    color: white;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    font-family: 'Poppins';
+    position: relative;
+    font-size: 2rem;
+}
+
+.container_nfts .h1_nfts::after {
+    content: '';
+    background: #8a027e;
+    width: 100px;
+    height: 5px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.row_nfts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20vh, 1fr));
+    gap: 2rem;
+}
+ 
+.service_nfts { 
+    text-align: center;
+    padding: 25px 10px;
+    height: 25vh;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: rgba( 0, 0, 0, 0.10);
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    transition: transform 0.5s, background 0.5s;
+}
+
+.service_nfts .h2_nfts {
+    font-weight: 600;
+    font-size: 2vh;
+    color: white;
+}
+
+.service_nfts .p_nfts {
+    color: white;
+    font-size: max(.9rem, 1vh);
+}
+
+.service_nfts:hover {
+    background: rgb(83,2,80);
+    background: linear-gradient(247deg, rgba(83,2,80,1) 0%, rgba(80,5,125,1) 50%, rgba(44,0,71,1) 100%);
+    transition: all 0.5s;
+    border: 1px solid rgba( 255, 255, 255, 0.7 );
+    transform: scale(1.05);
+}
+
+.img_nfts {
+    max-width: max(1rem, 2vw);
+    filter: invert(100%) sepia(0%) saturate(7480%) hue-rotate(291deg) brightness(103%) contrast(104%);
+}
+
+
+@media (max-width:420px) {
+    
+    .pic_factory{
+        position: absolute;
+        background: #252525;
+        height: 100vh;
+        width: 100vh;
+ 
+    }
+
+    .container_factory{
+        margin-left: 0px;
+        max-width: 380px;
+        max-height: 630px;
+    }
+
+    .h2_factory{
+        display: flex;
+        font-size: 2rem;
+    }
+
+    .p_factory{
+        
+        display: flex;
+        font-size: 1.2rem;
+    }
+
+   .modal_close{
+    display: none;
+    visibility: hidden;
+    pointer-events: none;
+   }
+
+   .btn_factory{
+    display: none;
+   }
+
+   .btn_factory2{
+    display: none;
+    visibility: hidden;
+    pointer-events: none;
+   }
+
+.show{
+    display: none;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+}

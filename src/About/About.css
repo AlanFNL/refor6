@@ -1,0 +1,39 @@
+.body_about {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    
+}
+
+.div_about {
+    background-color: rgb(74, 74, 75);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.h2_about
+{   
+    
+    color: rgb(230, 56, 56);
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-family: 'Poppins';
+    font-weight: 800;
+    text-align: center;
+}
+
+.p_about {
+    text-align: center;
+    color: white;
+    font-size: clamp(16px, 4vw, 22px);
+    line-height: 50px;
+    
+    font-family: 'Poppins';
+    font-weight: 400;
+}
+
+.text_about {
+    justify-content: center;
+    margin: auto;
+    width: 50%;
+}
