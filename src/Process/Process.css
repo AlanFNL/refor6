@@ -9,9 +9,7 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: rgb(83,2,80);
-    background: linear-gradient(224deg, rgba(83,2,80,1) 0%, rgb(77, 4, 119) 50%, rgba(44,0,71,1) 100%);
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    background: none;
     overflow: hidden;
 }
 
@@ -24,16 +22,14 @@
     left: 100px;
     right: 0;
     top: 200%;
-    background: #82037D;
-background: linear-gradient(to right, #82037D 53%, #50057D 95%, #2C0047 100%);
--webkit-background-clip: text;
-background-clip: text;
--webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #707070;
+    color: transparent;
     font-family: 'Poppins';
-    font-weight: 600;
+    font-weight: 400;
     margin: auto;
     font-size: 19rem;
-    opacity: .2;
+    
     animation: textclip 2s linear infinite;
 }
 
@@ -46,14 +42,11 @@ background-clip: text;
     left: 100px;
     right: 0;
     top: 270%;
-    background: #82037D;
-background: linear-gradient(to right, #82037D 53%, #50057D 95%, #2C0047 100%);
--webkit-background-clip: text;
-background-clip: text;
--webkit-text-fill-color: transparent;
-
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #707070;
+    color: transparent;
     font-family: 'Poppins';
-    font-weight: 600;
+    font-weight: 300;
     margin: auto;
     font-size: 19rem;
     
@@ -80,7 +73,7 @@ background-clip: text;
     position: relative;
     height: 250px;
     border-radius: 10px;
-    background-color: #fff;
+    background-color: #41057c;
     display: flex;
     
     width: 40%;
@@ -94,12 +87,12 @@ background-clip: text;
    left: 0;
    width: 100%;
    height: 100%;
-   background: rgb(83,2,80);
-background: linear-gradient(247deg, rgba(83,2,80,1) 0%, rgba(80,5,125,1) 50%, rgba(44,0,71,1) 100%);
+   background: rgb(0,0,0);
+background: linear-gradient(54deg, rgba(0,0,0,1) 0%, rgba(42,31,74,1) 25%, rgba(75,49,123,1) 75%, rgba(31,0,123,1) 100%);
    border-radius: 10px;
-   filter: blur(1px);
+  
    z-index: 5;
-   box-shadow:  10px 10px 22px #9d09c2;
+   box-shadow:  0px 0px 10px #cc00ff;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -114,7 +107,8 @@ background: linear-gradient(247deg, rgba(83,2,80,1) 0%, rgba(80,5,125,1) 50%, rg
     top: calc(50% - 75px);
     box-shadow: none;
     transition: 0.3s ease-in-out;
-    background: #7a0a96;
+    background: rgb(127,83,209);
+background: linear-gradient(160deg, rgba(127,83,209,1) 0%, rgba(106,24,153,1) 50%, rgba(63,13,87,1) 100%);
 }
 
 .container_verticals .card_verticals .imgBx:before {
@@ -125,7 +119,7 @@ background: linear-gradient(247deg, rgba(83,2,80,1) 0%, rgba(80,5,125,1) 50%, rg
    width: 100%;
    text-align: center;
    font-size: 6em;
-   color: rgba(247, 13, 255, 0.055);
+   color: rgba(255, 255, 255, 0.055);
    font-weight: 700;
 }
 
@@ -158,7 +152,16 @@ background: linear-gradient(247deg, rgba(83,2,80,1) 0%, rgba(80,5,125,1) 50%, rg
 {
   margin-bottom: 5px;
   font-size: 24px;
+  color: white;
 }
+
+.container_verticals .card_verticals .content_verticals .p_verticals 
+{
+  
+  color: white;
+}
+
+
 
 .container_verticals .card_verticals .content_verticals .a_verticals 
 {
@@ -167,7 +170,7 @@ background: linear-gradient(247deg, rgba(83,2,80,1) 0%, rgba(80,5,125,1) 50%, rg
     padding: 5px 10px;
     background: #333;
     text-decoration: none;
-    color: #fff;
+    color: rgb(255, 255, 255);
     
 }
 
@@ -220,4 +223,5 @@ background: linear-gradient(247deg, rgba(83,2,80,1) 0%, rgba(80,5,125,1) 50%, rg
         width: 100%;
     }
 } 
+
 

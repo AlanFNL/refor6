@@ -15,8 +15,7 @@
   grid-column: 2;
   place-items: center;
   overflow: hidden;
-  background: rgb(55,0,73);
-background: linear-gradient(0deg, rgba(192,0,255,1) 0%, rgba(101,34,143,1) 0.1%, rgba(101,8,156,1) 50%, rgba(66,29,88,1) 100%);
+  background: none;
 }
 
 

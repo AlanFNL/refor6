@@ -235,7 +235,7 @@ background: linear-gradient(123deg, rgba(83,2,80,1) 0%, rgba(80,5,125,1) 50%, rg
     
     .pic_factory{
         position: absolute;
-        background: #252525;
+        background: none;
         height: 100vh;
         width: 100vh;
  
