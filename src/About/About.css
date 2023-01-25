@@ -1,5 +1,5 @@
 .body_about {
-    height: 100vh;
+    height: 110vh;
     width: 100vw;
     display: flex;
     align-items: center;
@@ -11,6 +11,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin: auto;
 }
 
 .h2_about
@@ -26,7 +27,7 @@
 .p_about {
     text-align: center;
     color: white;
-    font-size: clamp(16px, 4vw, 22px);
+    font-size: clamp(1rem, 1vw, 2rem);
     line-height: 50px;
     font-family: 'Poppins';
     font-weight: 400;
@@ -41,8 +42,9 @@
 .spline_model {
     
     display: flex;
+    position: relative;
     height: 50vh;
-    margin-left: auto;
+    margin: auto
 }
 
 @media (max-width: 500px) {
