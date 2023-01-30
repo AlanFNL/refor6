@@ -35,8 +35,8 @@ function Footer() {
                         
                         <div className='footer_box'>
                             <h2>CONTACT INFO</h2>
-                            <p>+549123456</p>
                             <p>reforce@gmail.com</p>
+                            <p>+549123456</p>
                             <p>Based in Buenos Aires, Argentina</p>
                         </div>
                           <div className='footer_box'>
