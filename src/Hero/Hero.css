@@ -1,13 +1,14 @@
 .hero_div {
     height: 100vh;
-    width: 100vw;
+    
     justify-content: center;
     align-items: center;
     margin: auto;
-    background-image:url(../assets/abstract.webm);
+    background-image:url(../assets/abstract.gif);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
+    overflow: hidden;
 }
 
 .reftext {

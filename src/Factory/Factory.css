@@ -45,13 +45,13 @@
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     width: calc(35vw - 1rem);
-    height: 65vh;
+    height: 70vh;
     gap: -1rem;
 }
 
 .h2_factory
 {   
-    
+    margin: auto;
     color: white;
     display: flex;
     align-items: center;
@@ -59,7 +59,7 @@
     font-size: clamp(2rem, 2vw, 3rem);
     font-family: 'Poppins';
     font-weight: 800;
-    margin: 40px;
+    
 }
 
 .p_factory
@@ -196,7 +196,7 @@ background: linear-gradient(123deg, rgba(83,2,80,1) 0%, rgba(80,5,125,1) 50%, rg
 .service_nfts { 
     text-align: center;
     padding: 25px 10px;
-    height: 25vh;
+    height: 30vh;
     border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
@@ -225,7 +225,7 @@ background: linear-gradient(123deg, rgba(83,2,80,1) 0%, rgba(80,5,125,1) 50%, rg
 }
 
 .img_nfts {
-    max-width: max(1rem, 2vw);
+    max-width: max(1rem, 3vw);
     filter: invert(100%) sepia(0%) saturate(7480%) hue-rotate(291deg) brightness(103%) contrast(104%);
 }
 
@@ -242,8 +242,10 @@ background: linear-gradient(123deg, rgba(83,2,80,1) 0%, rgba(80,5,125,1) 50%, rg
 
     .container_factory{
         margin-left: 0px;
-        max-width: 380px;
-        max-height: 630px;
+        width: 100vw;
+        max-height: 500px;
+        background: none;
+        border: none;
     }
 
     .h2_factory{

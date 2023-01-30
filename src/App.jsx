@@ -32,6 +32,7 @@ function App() {
      <Partners/>
      <Form/>
      <Footer/>
+
      </BrowserRouter>
     </div>
 
