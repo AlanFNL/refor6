@@ -122,7 +122,8 @@ background: linear-gradient(247deg, rgba(83,2,80,1) 0%, rgba(80,5,125,0.75) 50%,
 }
 
 .video_container video{
-    max-width: fit-content;
+    
+
     max-height: 85%;
     transform: scale(0);
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
@@ -176,8 +177,11 @@ background: linear-gradient(247deg, rgba(83,2,80,1) 0%, rgba(80,5,125,0.75) 50%,
         font-size: 1.2rem;
     }
 
-    .btn_metaverse{
-        display: none;
+    .video_container video{
+    
+
+        max-height: 55%;
+        
     }
 
 

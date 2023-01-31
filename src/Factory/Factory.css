@@ -259,26 +259,46 @@ background: linear-gradient(123deg, rgba(83,2,80,1) 0%, rgba(80,5,125,1) 50%, rg
         font-size: 1.2rem;
     }
 
-   .modal_close{
-    display: none;
-    visibility: hidden;
-    pointer-events: none;
-   }
+    .modal_container_f {
+        width: 100vw;
+        
+        
+    }
 
-   .btn_factory{
-    display: none;
-   }
+    .container_nfts {
+        width: 100%;
+        height: 100%;
+        padding: 0 5%;
+    }
 
-   .btn_factory2{
-    display: none;
-    visibility: hidden;
-    pointer-events: none;
-   }
+    .row_nfts {
+        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+        gap: 2.5rem;
+        
+    }
+    
+    .service_nfts { 
+        height: 33vh;
+        width: 175%;
+        
+    }
 
-.show{
-    display: none;
-    visibility: hidden;
-    pointer-events: none;
+    .service_nfts .h2_nfts {
+        font-weight: 600;
+        font-size: 1.20vh;
+        color: white;
+    }
+    
+    .service_nfts .p_nfts {
+        color: white;
+        font-size: .8rem;
+    }
+
+    .modal_close {
+    margin-top: 20px;
+    
+    margin-left: 90%;
+    
 }
 
 }

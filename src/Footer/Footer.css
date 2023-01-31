@@ -1,7 +1,7 @@
 .body_footer 
 {   
     display: flex;
-    min-height: 70vh;
+    min-height: 90vh;
     position: relative;
     background: none;
     overflow: hidden;
@@ -16,10 +16,8 @@ footer
     background: #a30fb1;
     min-height: 100px;
     padding: 20px 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    
+    
 }
 
 
@@ -145,5 +143,47 @@ footer .wave#wave4
     color: white;
     font-size: 1rem;
     text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding: 45px 0px;
     
 }
+
+footer .footer_part1 .footer_box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer_part1 .footer_box figure img {
+    width: 350px;
+}
+
+footer .footer_part1 .footer_box h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 1.2rem;
+}
+
+footer .footer_part1 .footer_box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width:800px) {
+
+   
+
+    footer .footer_part1{
+        
+        margin: auto;
+        justify-content: center;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+        padding: 15px 0px;
+    }
+}
+
