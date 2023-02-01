@@ -29,8 +29,8 @@ footer .social_icon
 {
     position: relative;
     display: flex;
-    justify-content: left;
-    align-items: left;
+    justify-content: center;
+    align-items: center;
     margin: 10px 0;
 }
 
@@ -148,6 +148,7 @@ footer .wave#wave4
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
     padding: 45px 0px;
+    margin-left: 7.5%;
     
 }
 
@@ -168,13 +169,21 @@ footer .footer_part1 .footer_box h2 {
     color: #fff;
     margin-bottom: 25px;
     font-size: 1.2rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer_part1 .footer_box  .footer_H2 {
     text-align: left;
+    
 }
 
 footer .footer_part1 .footer_box p{
     color: #efefef;
     margin-bottom: 10px;
-    text-align: left;
+    text-align:left;
+    margin: auto;
 }
 
 @media screen and (max-width:800px) {
@@ -189,5 +198,12 @@ footer .footer_part1 .footer_box p{
         gap: 30px;
         padding: 15px 0px;
     }
+
+    footer .footer_part1 .footer_box:nth-child(2) {
+        text-align: center;
+        margin-inline: auto;
+    }
+
+    
 }
 
