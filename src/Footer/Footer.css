@@ -28,8 +28,8 @@ footer .social_icon
 {
     position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
     margin: 10px 0;
 }
 
@@ -166,6 +166,7 @@ footer .footer_part1 .footer_box h2 {
     color: #fff;
     margin-bottom: 25px;
     font-size: 1.2rem;
+    text-align: left;
 }
 
 footer .footer_part1 .footer_box p{
