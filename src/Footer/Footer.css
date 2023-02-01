@@ -16,7 +16,7 @@ footer
     background: #a30fb1;
     min-height: 100px;
     padding: 20px 50px;
-    
+    text-align: left;
     
 }
 
@@ -171,6 +171,7 @@ footer .footer_part1 .footer_box h2 {
 footer .footer_part1 .footer_box p{
     color: #efefef;
     margin-bottom: 10px;
+    text-align: left;
 }
 
 @media screen and (max-width:800px) {

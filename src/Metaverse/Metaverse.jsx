@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react'
 import { useInViewport } from 'react-in-viewport'
 import { useTranslation } from "react-i18next";
-import reel from '../assets/reel2.mp4'
+import reel from '../assets/metaverse.mp4'
 import './Metaverse.css'
 
 
