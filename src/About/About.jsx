@@ -17,7 +17,7 @@ function AboutUs() {
     );
 
    return (
-      <body className='body_about'>
+      <body id='about' className='body_about'>
         <div className='div_about'>
             <div className='text_about'>
             <h2 className='h2_about'>{t("header.about-us")}</h2>
