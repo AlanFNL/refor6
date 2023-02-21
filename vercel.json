@@ -3,11 +3,11 @@
       { "handle": "filesystem" },
       {
         "src": "/blog",
-        "dest": "/src/componentes/pages/Home/index.jsx"
+        "dest": "/src/components/pages/Home/index.jsx"
       },
       {
         "src": "/blogs/:id",
-        "dest": "/src/components/pages/Blog/[id].jsx"
+        "dest": "/src/components/pages/Blog/[id].js"
       },
       {
         "src": "/blogs",
@@ -15,7 +15,7 @@
       },
       {
         "src": "/(.*)",
-        "dest": "/src/App.jsx"
+        "dest": "/src/main.jsx"
       }
     ]
   }
