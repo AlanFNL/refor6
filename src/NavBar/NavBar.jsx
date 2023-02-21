@@ -113,6 +113,12 @@ const NavBar = ({ accounts, setAccounts }) => {
 
           <Links to="/blog" smooth scroll={(el) => scrollWithOffset(el)}>
             <a className="a_navbar" onClick={handleBlogClick}>
+              BLOG
+            </a>
+          </Links>
+
+          <Links to="#partners" smooth scroll={(el) => scrollWithOffset(el)}>
+            <a className="a_navbar" href="#partners">
               {t("nav.5")}
             </a>
           </Links>
