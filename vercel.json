@@ -2,12 +2,20 @@
     "routes": [
       { "handle": "filesystem" },
       {
-        "src": "/blog/(.*)",
-        "dest": "/Home/$1"
+        "src": "/blog",
+        "dest": "/src/componentes/pages/Home/index.jsx"
       },
       {
-        "src": "/blogs/(.*)",
-        "dest": "/Blog/$1"
+        "src": "/blogs/:id",
+        "dest": "/src/components/pages/Blog/[id].jsx"
+      },
+      {
+        "src": "/blogs",
+        "dest": "/src/components/pages/Blog/index.jsx"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/src/App.jsx"
       }
     ]
   }
