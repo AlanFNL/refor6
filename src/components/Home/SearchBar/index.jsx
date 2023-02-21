@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles.css";
+import lupa from "../../../assets/lupa.png";
 const SearchBar = ({ value, handleSearchKey, clearSearch, formSubmit }) => (
   <div className="searchBar-wrap">
     <form onSubmit={formSubmit}>
@@ -8,10 +9,13 @@ const SearchBar = ({ value, handleSearchKey, clearSearch, formSubmit }) => (
         type="text"
         onChange={handleSearchKey}
         placeholder="Search by category"
+        s
         value={value}
       />
       {value && <span onClick={clearSearch}>X</span>}
-      <button>Search</button>
+      <button>
+        <img className="search-logo" src={lupa} alt="search" />
+      </button>
     </form>
   </div>
 );

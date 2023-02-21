@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
+    transition: all 1s;
 }
 
 @media (max-width: 768px) {

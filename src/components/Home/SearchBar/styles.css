@@ -33,4 +33,16 @@
 background: linear-gradient(200deg, rgb(0, 0, 0) 0%, rgb(79, 23, 176) 50%, rgba(99,23,143,1) 72%, rgba(54,40,94,1) 100%);
     color: #fff;
     font-family: 'Poppins';
+    max-width: 50px;
+}
+
+.search-logo {
+    max-width: 90%;
+    margin-top: .25rem;
+    filter: invert(90%);
+}
+
+.searchBar-wrap button:hover {
+    opacity: 80%;
+    transition: all .5s;
 }
