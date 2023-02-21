@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import Blog from "../src/components/pages/Blog/index";
-import Home from "./components/pages/Home/index";
+import Home from "./components/pages/Home/home";
 import { I18nextProvider } from "react-i18next";
 import i18next from "i18next";
 import "./index.css";
