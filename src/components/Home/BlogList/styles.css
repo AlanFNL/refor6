@@ -2,7 +2,12 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
-    transition: all 1s;
+    transition: all ease-in-out .5s;
+}
+
+.blogList-wrap:hover {
+    transition: all ease-in-out .5s;
+    transform: translateY(5px);
 }
 
 @media (max-width: 768px) {

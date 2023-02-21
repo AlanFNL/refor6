@@ -34,7 +34,7 @@ const Home = () => {
 
   return (
     <div className="body-blog">
-      <Link className="blog-goBack" to="/">
+      <Link className="blog-goBack2" to="/">
         <span> &#8592;</span> <span>Go Back</span>
       </Link>
       {/* Page Header */}

@@ -47,6 +47,7 @@
     color: white;
     padding-right: 1rem;
     font-size: 1.35rem;
+    transition: all ease-in-out .5s;
   }
   
   .blogItem-author {
@@ -72,4 +73,9 @@
     color: #a9a9a9;
     font-weight: 600;
     font-family: 'Poppins';
+  }
+
+  .blogItem-link:hover {
+    transform: translateX(5px);
+    transition: all ease-in-out .5s;
   }
