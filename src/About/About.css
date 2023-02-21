@@ -4,6 +4,7 @@
     display: flex;
     align-items: center;
     overflow: hidden;
+    background: none;
 }
 
 .div_about {

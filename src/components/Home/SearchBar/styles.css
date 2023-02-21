@@ -1,0 +1,36 @@
+.searchBar-wrap {
+    background-color: #f0f0f0;
+    width: fit-content;
+    margin: 2.5rem auto 4rem auto;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.searchBar-wrap form {
+    display: flex;
+    align-items: center;
+}
+
+.searchBar-wrap input {
+    background-color: #f0f0f0;
+    outline: none;
+    font-family: 'Poppins';
+    border: none;
+}
+
+.searchBar-wrap span {
+    padding-right: .5rem;
+    cursor: pointer;
+    font-family: 'Poppins';
+}
+
+.searchBar-wrap button {
+    outline: none;
+    border: none;
+    padding: .3rem 1rem;
+    border-radius: 5px;
+    background: rgb(0,0,0);
+background: linear-gradient(200deg, rgb(0, 0, 0) 0%, rgb(79, 23, 176) 50%, rgba(99,23,143,1) 72%, rgba(54,40,94,1) 100%);
+    color: #fff;
+    font-family: 'Poppins';
+}

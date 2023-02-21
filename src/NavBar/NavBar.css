@@ -14,6 +14,7 @@
 .nav ul {
  display: inline-flex;
  margin-top: 1.7rem;
+
 }
 
 link :not(nav) {

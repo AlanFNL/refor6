@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+
+.home-header {
+    text-align: center;
+}
+
+.logo-blog {
+    width: 25%;
+}
+
+.home-header h2 {
+    color: #7b048b;
+    font-size: 2rem;
+}
+
+.home-header h1{
+    font-size: 3rem;
+    background: rgb(0,0,0);
+background: linear-gradient(90deg, rgb(109, 104, 104) 0%, rgb(79, 23, 176) 50%, rgba(99,23,143,1) 72%, rgba(54,40,94,1) 100%);
+
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+    margin-bottom: 1rem;
+    font-family: 'Poppins';
+}
+
+.home-header p{
+    color: #a9a9a9;
+    font-weight: 500;
+}
+
+@media (max-width: 500px) {
+    .logo-blog {
+        width: 75%;
+    }
+}

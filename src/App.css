@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 
+
+
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +14,8 @@ body {
   margin: auto;
   overflow-y: scroll;
   overflow-x: hidden;
+  background: rgb(0,0,0);
+  background: linear-gradient(200deg, rgb(0, 0, 0) 0%, rgb(79, 23, 176) 50%, rgba(99,23,143,1) 72%, rgba(54,40,94,1) 100%);
 }
 
 .App {
@@ -29,11 +33,7 @@ background: linear-gradient(112deg, rgba(0,0,0,1) 0%, rgba(44,16,92,1) 50%, rgba
 
 
 
-h2 {
-  color: white;
-  text-align: center;
-  margin-top: 25%;
-}
+
 
 
 

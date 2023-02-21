@@ -1,0 +1,47 @@
+.blog-wrap {
+    max-width:800px;
+    margin: 0 auto;
+    width: 95%;
+    padding: 1rem 0;
+  }
+  
+  .blog-goBack {
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: #a9a9a9;
+    font-weight: 500;
+    margin-bottom: 0rem;
+    display: block;
+    font-family: 'Poppins';
+  }
+  .blog-wrap header {
+    text-align: center;
+    font-family: 'Poppins';
+    color: white;
+  }
+  
+  .blog-date {
+    font-size: 0.8rem;
+    color: #a9a9a9;
+    font-weight: 500;
+    font-family: 'Poppins';
+  }
+  
+  .blog-wrap img {
+    width: 100%;
+  }
+  
+  .blog-subCategory {
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins';
+  }
+  .blog-subCategory > div {
+    margin: 1rem;
+  }
+  .blog-desc {
+    padding: 1rem;
+    margin-top: 1.5rem;
+    font-family: 'Poppins';
+    color: white;
+  }

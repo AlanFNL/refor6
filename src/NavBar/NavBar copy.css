@@ -1,0 +1,217 @@
+.nav {
+    z-index: 20;
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+     width: 100%;
+     height: clamp(6rem, 7vh, 10vh);
+     position: fixed;
+     text-align: center;
+     max-height: 100vh;
+     max-width: 100vw;
+     
+}
+
+.nav ul {
+ display: inline-flex;
+ margin-top: 1.7rem;
+}
+
+link :not(nav) {
+    z-index: 20;
+    height: 1vh;
+    width: 70vw;
+    min-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.a_navbar {  
+    z-index: 20;
+    position: relative;
+    text-decoration: none;
+    color: rgb(218, 218, 218);
+    font-size: clamp(0.5rem, 1.15rem, 2rem);
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+    padding: 0 0.6rem;
+}
+
+.a_navbar:after { 
+    z-index: 20;
+    content: "";
+    position:absolute;
+    border-radius: 30px;
+    background-color: blueviolet;
+    height: 5px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s ease;
+}
+
+
+.a_navbar:hover {
+    z-index: 20;
+    color: rgb(255, 255, 255);
+    transition: 0.3s ease-in-out;
+}
+
+
+.a_navbar:hover:after {
+    z-index: 20;
+    right: 0;
+    width: 100%;
+    
+}
+
+.btn_connect {
+    background: linear-gradient(190deg, rgb(151, 5, 219) 0%, rgba(80,5,125,1) 50%, rgb(119, 4, 190) 100%);
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 50px;
+    box-shadow: 0px 2px 2px 1px #0f0f0f;
+    color: white;
+    cursor: pointer;
+    padding: .5rem;
+    font-weight: 600;
+    margin-top: -0.5rem;
+    
+}
+
+.img_nav {
+    cursor: pointer;
+    z-index: 21;
+    display: flex;
+    position: fixed;
+    margin-left: 1rem;
+    min-height: 8%;
+    margin-top: -0.5rem;
+    width: 4rem;
+}
+
+.div_language {
+    float: right;
+    display: flex;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    padding: 0.5rem;
+    
+}
+
+.div_language .hr_btn {
+    z-index: 20;
+    width: 100%;
+    height: 2rem;
+    border: none;
+    background: #a804a8;
+    margin: auto;
+    display: flex;
+    
+    padding: 1px;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+    
+    
+}
+
+
+.btn_language {
+    z-index: 20;
+    cursor: pointer;
+    display: flex;
+    font-size: 1.3rem;
+    color: white;
+    margin-left: auto;
+    
+}
+
+
+
+link, link:hover{
+    content-visibility: hidden;
+    visibility: hidden;
+    color: unset;
+    height: 0;
+    width: 0;
+}
+
+link:hover:after{
+    width: 0;
+}
+
+.toggler_navbar{
+    cursor: pointer!important;
+    display: none;
+    float: right;
+    margin-top: 1rem;
+    transition: 0.3s ease-in;
+}
+
+.toggler_navbar div{
+       width: 2.8rem!important;
+       height: 0.3rem;
+       margin: 0.5rem;
+       background: rgb(83,2,80);
+background: linear-gradient(247deg, rgb(170, 7, 165) 0%, rgba(128, 8, 197, 0.75) 50%, rgba(90, 4, 143, 0.5) 100%);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+       transition: 0.3s ease-in;
+}
+
+@media (min-width: 769px) and (max-width: 1300px) {
+    .a_navbar {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 1050px) 
+{
+    .toggler_navbar{
+    display: block!important;
+    cursor: pointer!important;
+   
+    }
+
+    
+
+    .menu_navbar{
+        
+        display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-top: 1px solid #fff;
+    position: absolute;
+    background: rgb(83,2,80);
+background: linear-gradient(247deg, rgba(83,2,80,1) 0%, rgba(80,5,125,0.75) 50%, rgba(44,0,71,0.5) 100%);
+    
+  
+    text-align: center;
+    font-size: 3rem;
+    top: 70%;
+    left: -100%;
+
+        transform: translateX(0);
+        transition: 0.5s ease-in;
+    }
+
+    .btn_connected, .btn_connect{
+        display: none;
+        visibility: hidden;
+    }
+
+}
+
+.active_navbar {
+    transform: translateX(100%)!important;
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-4px, 5px);
+  }
+  .toggle .line2 {
+    opacity: 0;
+  }
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-12px, -15px);
+  }
