@@ -1,0 +1,14 @@
+{
+    "routes": [
+      { "handle": "filesystem" },
+      {
+        "src": "/blog/(.*)",
+        "dest": "/Home/$1"
+      },
+      {
+        "src": "/blogs/(.*)",
+        "dest": "/Blog/$1"
+      }
+    ]
+  }
+  
