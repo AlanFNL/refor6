@@ -15,6 +15,7 @@
   .blogItem-wrap h3 {
     margin: 0.5rem 0 1rem 0;
     padding-left: .6rem;
+    letter-spacing: 0.15ch;
     flex: 1;
     color: white;
     font-family: 'Poppins';
@@ -22,15 +23,16 @@
   
   .blogItem-desc {
     position: relative;
-    max-height: 50px;
+    max-height: 60px;
     overflow: hidden;
-    padding-left: .6rem;
+    padding-left: .7rem;
     padding-right: 1rem;
     font-size: 0.8rem;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     color: #a9a9a9;
+    font-family: 'Poppins';
   }
   
 
@@ -57,6 +59,7 @@
     font-family: 'Poppins';
     font-size: 1.25rem;
     margin-left: 0.7rem;
+    letter-spacing: 0.075ch;
     margin-bottom: 0.5rem;
   }
   
