@@ -6,6 +6,7 @@ import Home from "./components/pages/Home/index";
 import { I18nextProvider } from "react-i18next";
 import i18next from "i18next";
 import "./index.css";
+import { Analytics } from "@vercel/analytics/react";
 
 import global_es from "./Translations/es/global.json";
 import global_en from "./Translations/en/global.json";
@@ -48,6 +49,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <I18nextProvider i18n={i18next}>
       <RouterProvider router={router} />
+      <Analytics />
     </I18nextProvider>
   </React.StrictMode>
 );

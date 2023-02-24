@@ -16,6 +16,7 @@
     "@openzeppelin/contracts": "^4.8.0",
     "@splinetool/react-spline": "^2.2.5",
     "@splinetool/runtime": "^0.9.175",
+    "@vercel/analytics": "^0.1.10",
     "dotenv": "^16.0.3",
     "ethereum-waffle": "^3.4.4",
     "ethers": "^5.7.2",
