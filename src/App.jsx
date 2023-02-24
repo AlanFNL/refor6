@@ -8,7 +8,6 @@ import Factory from "../src/Factory/Factory";
 import Partners from "../src/Partners/Partners";
 import Form from "../src/Form/Form";
 import Footer from "../src/Footer/Footer";
-import { Analytics } from "@vercel/analytics/react";
 
 import "./App.css";
 
@@ -26,7 +25,6 @@ function App() {
       <Partners />
       <Form />
       <Footer />
-      <Analytics />
     </div>
   );
 }
