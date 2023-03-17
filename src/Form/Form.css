@@ -15,24 +15,31 @@
 {   
     
     z-index: 3;
-    background: rgb(255, 255, 255);
+    background: rgba(251, 251, 251, 0.1);
     border-radius: 10px;
     width: 800px;
     max-width: 800px;
-
-    
-
     padding: 25px 40px 10px 40px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transform: translateY(25%);
+    transition: all .5s ease-in-out;
+}
+
+.fade {
+    opacity: 1;
+    transform: translateY(0%);
+    transition: all .5s ease-in-out;
 }
 
 .container_form .text_form
 {
-    font-size: 35px;
+    font-size: clamp(4rem, 5vw, 6rem);
     font-weight: 600;
     text-align: center;
     background: #82037D;
-background: linear-gradient(to right, #82037D 53%, #50057D 95%, #2C0047 100%);
+    background: linear-gradient(to right bottom, rgb(255, 255, 255) 30%, rgba(255, 255, 255, 0.38));
+
 -webkit-background-clip: text;
 background-clip: text;
 -webkit-text-fill-color: transparent;
@@ -56,11 +63,14 @@ form .row_form .input_data
     height: 40px;
     margin: 0 20px;
     position: relative;
+    color: white;
+   
 }
 
 form .row_form .textarea
 {
     height: 70px;
+    color: white;
 }
 
 .input_data input, .textarea textarea
@@ -71,6 +81,8 @@ form .row_form .textarea
     border: none;
     font-size: 17px;
     font-family: 'Poppins';
+    color: white;
+    background: none;
     border-bottom: 2px solid rgba(0, 0, 0, 0.12);
 }
 
@@ -86,7 +98,7 @@ form .row_form .textarea
 .textarea textarea:valid ~ label
 {
     transform: translateY(-20px);
-    color: #b211b8;
+    color: #ffffff;
     font-size: 14px;
 }
 
@@ -142,6 +154,8 @@ form .row_form .textarea
   height: 45px!important;
   width: 25%!important;
   overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
   
 }
 
@@ -153,6 +167,7 @@ form .row_form .textarea
     position: absolute;
     left: -100%;
     background: rgb(230,0,221);
+   
     background: linear-gradient(54deg, rgba(230,0,221,1) 0%, rgba(80,5,125,1) 50%, rgba(44,0,71,1) 100%);
     transition: all 0.3s;
 }
@@ -160,6 +175,11 @@ form .row_form .textarea
 .submit_btn .input_data:hover .inner_form
 {
     left: 0;
+}
+
+.submit_btn .input_data:hover {
+    box-shadow:  0px 5px 22px #9d09c2;
+    filter: brightness(1.2);
 }
 
 .submit_btn .input_data input

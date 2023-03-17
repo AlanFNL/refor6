@@ -1,10 +1,10 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { useInViewport } from "react-in-viewport";
 import { useTranslation } from "react-i18next";
-import Spline from "@splinetool/react-spline";
-import "../About/About.css";
 
-function AboutUs() {
+import "../Consult/Consult.css";
+
+function Consult() {
   const [t, i18n] = useTranslation("global");
 
   const ref = useRef(null);
@@ -47,18 +47,27 @@ function AboutUs() {
   }, []);
 
   return (
-    <body id="about" className="body_about">
-      <div className="div_about">
-        <div ref={sectionRef} className="text_about">
-          <h2 className="h2_about">{t("header.about-us")}</h2>
-          <p className="p_about">{t("header.about-us-text")}</p>
-        </div>
-        <div className="spline_model">
-          <Spline scene="https://prod.spline.design/MTGt6-GeQPy0x6H2/scene.splinecode" />
+    <body id="about" className="body_consult">
+      <div className="div_consult">
+        <div ref={sectionRef} className="text_consult">
+          <h2 className="h2_consult">Consultancy</h2>
+          <p className="p_consult">
+            Limited time offer: We’re gifting a $500 USD 30-minute consultation
+            during March, where you’ll have the oportunity to access to
+            personalized digital marketing advice with our experts, to get more
+            info click the button below!
+          </p>
+          <a
+            href="https://forms.gle/smYr32Ap27HTQMPC9"
+            target="_blank"
+            className="a_about"
+          >
+            Get started
+          </a>
         </div>
       </div>
     </body>
   );
 }
 
-export default AboutUs;
+export default Consult;

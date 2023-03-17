@@ -146,7 +146,7 @@ footer .wave#wave4
     text-align: center;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
+    gap:220px;
     padding: 45px 0px;
     margin-left: 7.5%;
     
@@ -188,10 +188,23 @@ footer .footer_part1 .footer_box p{
 
 @media screen and (max-width:800px) {
 
-   
+    footer .footer_part1 .footer_box  .footer_H2 {
+        text-align: center;
+        
+    }
+    
+    .body_footer {
+        height: 130vh;
+    }
+
+    footer .footer_part1 .footer_box figure {
+   margin-bottom: -70%;
+   padding-top: 20%;
+   margin-left: -5%;
+      
+    }
 
     footer .footer_part1{
-        
         margin: auto;
         justify-content: center;
         grid-template-columns: repeat(1, 1fr);

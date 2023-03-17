@@ -31,12 +31,14 @@
     background-size: cover;
 }
 
+
+
 .container_metaverse
 {   
     display: flex;
     position: flex;
     display: grid;
-    margin-top: 10%;
+    margin-top: 5%;
     margin-left: 5%;
     margin-right: auto;
     background: rgb(83,2,80);
@@ -44,8 +46,17 @@ background: linear-gradient(247deg, rgba(83,2,80,1) 0%, rgba(80,5,125,0.75) 50%,
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     width: calc(35vw - 1rem);
-    height: 70vh;
+    height: 85vh;
+    opacity: 0;
+    transform: translateX(-25%);
+    transition: all .5s ease-in-out;
     
+}
+
+.fade {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all .5s ease-in-out;
 }
 
 .h2_metaverse
@@ -54,19 +65,22 @@ background: linear-gradient(247deg, rgba(83,2,80,1) 0%, rgba(80,5,125,0.75) 50%,
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: clamp(2rem, 2vw, 3rem);
+    font-size: clamp(4rem, 5vw, 6rem);
     font-family: 'Poppins';
     font-weight: 800;
-    margin: auto;
+    margin-left: 10%;
+    background: linear-gradient(to right bottom, rgb(255, 255, 255) 30%, rgba(255, 255, 255, 0.38));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .p_metaverse
 {
-    color: white;
+   color: rgb(216, 216, 216);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: clamp(1rem, 1vw, 1.25rem);
+    font-size: clamp(1.5rem, 1vw, 2rem);
     font-family: 'Poppins';
     font-weight: 400;
     margin: 40px;
@@ -86,7 +100,7 @@ background: linear-gradient(247deg, rgba(83,2,80,1) 0%, rgba(80,5,125,0.75) 50%,
     transition: all 0.3s;
     color: #fff;
     border-radius: 10px;
-    font-size: clamp(1rem, 1vw, 2rem);;
+    font-size: clamp(1.25rem, 1vw, 2rem);
     font-weight: bold;
 
 }
@@ -146,28 +160,44 @@ background: linear-gradient(247deg, rgba(83,2,80,1) 0%, rgba(80,5,125,0.75) 50%,
     
     .pic{
         position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        height: 100vh;
+    background: none;
+        height:90vh;
         width: 100vh;
-       background: none;
+       
 
     }
   
+    .body_metaverse {
+        background: none;
+    }
 
     .container_metaverse{
         margin-left: 0px;
         width: 100vw;
-        max-height: 500px;
-        background: none;
-        border: none;
+        max-height: 700px;
+
+        border-radius: 10px;
     }
 
+   .container_metaverse::before { 
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    background-image: url(../assets/metaverse2.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+   }
+   
     .h2_metaverse{
         display: flex;
-        font-size: 2rem;
+        font-size: 2.5rem;
+        margin-left: 10%;
     }
 
     .p_metaverse{

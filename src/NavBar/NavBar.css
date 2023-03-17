@@ -1,5 +1,5 @@
 .nav {
-    z-index: 20;
+    z-index: 9998;
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
      width: 100%;
@@ -82,7 +82,7 @@ link :not(nav) {
 
 .img_nav {
     cursor: pointer;
-    z-index: 21;
+    z-index: 9999;
     display: flex;
     position: fixed;
     margin-left: 1rem;
@@ -181,7 +181,6 @@ background: linear-gradient(247deg, rgb(170, 7, 165) 0%, rgba(128, 8, 197, 0.75)
         display: flex;
     flex-direction: column;
     width: 100%;
-    border-top: 1px solid #fff;
     position: absolute;
     background: rgb(83,2,80);
 background: linear-gradient(247deg, rgba(83,2,80,1) 0%, rgba(80,5,125,0.75) 50%, rgba(44,0,71,0.5) 100%);

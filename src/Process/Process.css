@@ -23,7 +23,7 @@
     align-items: center;
     left: 100px;
     right: 0;
-    top: 200%;
+    top: 188%;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #707070;
     color: transparent;
@@ -41,9 +41,9 @@
     position: absolute;
     justify-content: center;
     align-items: center;
-    left: 100px;
+    left: 500px;
     right: 0;
-    top: 270%;
+    top: 250%;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #707070;
     color: transparent;
@@ -69,7 +69,12 @@
     gap: 5rem;
     margin: 20px;
     box-shadow: 130px;
+    opacity: 0;
+    transform: translateY(25%);
+    transition: all .5s ease-in-out;
 }
+
+
 
 .container_verticals .card_verticals {
     position: relative;
@@ -77,10 +82,15 @@
     border-radius: 10px;
     background-color: #41057c;
     display: flex;
-    
     width: 40%;
     margin: 10px 0;
     box-shadow: 130px;
+}
+
+.fade {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all .5s ease-in-out;
 }
 
 .container_verticals .card_verticals .imgBx {
@@ -155,6 +165,9 @@ background: linear-gradient(160deg, rgba(127,83,209,1) 0%, rgba(106,24,153,1) 50
   margin-bottom: 5px;
   font-size: 24px;
   color: white;
+  background: linear-gradient(to right bottom, rgb(255, 255, 255) 30%, rgba(255, 255, 255, 0.38));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .container_verticals .card_verticals .content_verticals .p_verticals 

@@ -9,7 +9,7 @@
     },
 
     "header": {
-        "about-us": "ABOUT US",
+        "about-us": "About us",
         "about-us-text": "We are a web3 agency, your portal to new technologies. We offer practical solutions through the different applications of blockchain technology.",
         "claim": "CLAIM NFT"
     },
@@ -49,7 +49,7 @@
     },
 
     "partners": {
-        "header": "PARTNERS"
+        "header": "Partners"
     },
 
     "form": {
@@ -63,6 +63,6 @@
     },
 
     "learn-btn": {
-       "text": "LEARN MORE"
+       "text": "Learn more"
     }
 }

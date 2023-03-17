@@ -1,5 +1,5 @@
-.body_about {
-    height: 90vh;
+.body_consult {
+    height: 80vh;
     width: 100vw;
     display: flex;
     align-items: center;
@@ -7,26 +7,20 @@
     background: none;
 }
 
-
-
-.div_about {
+.div_consult {
     background: linear-gradient(200deg, rgb(0, 0, 0, .2) 0%, rgb(79, 23, 176, 0.5) 50%, rgba(99,23,143,0.5) 72%, rgba(54,40,94,0.5) 100%);
     border-radius: 20px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     box-shadow: rgba(209, 209, 209, 0.15) 0px 5px 25px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
-    gap: 10px;
     width: 98%;
+    height: 80%;
     align-items: center;
     justify-content: center;
     text-align: center;
     margin: auto;
-   
-}  
+}
 
-
-.h2_about
+.h2_consult
 {   
     
     color: white;
@@ -40,18 +34,18 @@
     -webkit-text-fill-color: transparent;
 }
 
-.p_about {
+.p_consult {
     text-align: center;
     color: rgb(216, 216, 216);
     font-size: clamp(1.5rem, 1vw, 2rem);
     line-height: 50px;
     font-family: 'Poppins';
     font-weight: 400;
-    margin-bottom: 2%;
+    margin-bottom: 5%;
     
 }
 
-.a_about {
+.a_consult {
     text-decoration: none;
     cursor: pointer;
     padding: 15px 40px;
@@ -66,59 +60,51 @@
 }
 
 
-.a_about:hover {
+.a_consult:hover {
     box-shadow:  0px 5px 22px #9d09c2;
     filter: brightness(1.2);
     
 }
 
 
-.text_about {
+.text_consult {
     justify-content: center;
     margin: auto;
-    width: 90%;
+    width: 50%;
     opacity: 0;
     transform: translateY(25%);
-    transition: all 1s ease-in-out;
+    transition: all .25s ease-in-out;
 }
-
 
 .fade {
     opacity: 1;
-
-    transform: translateY(0) ;
-    transition: all 0.5s ease-in-out;
+    transform: translateY(0);
+    transition: all .25s ease-in-out;
 }
 
+@media (max-width: 700px) {
 
-.spline_model {
-    
-    display: flex;
-    position: relative;
-    left: -3%;
-    height: 80vh;
-    width: 35vw;
-    margin: auto;
-
-    
-}
-
-@media (max-width: 500px) {
-    .spline_model {
-        display: none;
-        visibility: none;
+    .h2_consult {
+        font-size: 2.5rem;
     }
 
-    .div_about {
-       height: 80%;
-    }
-    
-    .h2_about {
-   font-size: 2.5rem;
+    .p_consult {
+       
+        
+            display: flex;
+            font-size: 1.2rem;
+            text-align: center;
+            
+         
     }
 
-    .p_about {
-        font-size: 1.2em;
+    .text_consult {
+        width: 99%;
+        margin: 5px;
+    }
+
+    .div_consult {
+        height: 100%;
         
     }
 }
