@@ -104,7 +104,7 @@ function Form() {
 
   return (
     <body className="body_form">
-      <div className="container_form">
+      <div ref={sectionRef} className="container_form">
         <div className="text_form">{t("form.contact")}</div>
         <div className="text_form">Contact us</div>
         <form ref={form} onSubmit={sendEmail}>
