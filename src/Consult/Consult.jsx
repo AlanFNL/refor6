@@ -52,11 +52,11 @@ function Consult() {
       <div className="div_consult">
         <div ref={sectionRef} className="text_consult">
           <h2 className="h2_consult">Discovery Meeting</h2>
+          <p className="p_2">Limited time offer:</p>
           <p className="p_consult">
-            <p className="p_2">Limited time offer: </p> We’re gifting a 30
-            minute consultation during March, where you’ll have the opportunity
-            to access to personalized digital marketing advice with our experts,
-            to get more info click the button below!
+            We’re gifting a 30 minute consultation during March, where you’ll
+            have the opportunity to access to personalized digital marketing
+            advice with our experts, to get more info click the button below!
           </p>
           <PopupButton
             className="a_consult"

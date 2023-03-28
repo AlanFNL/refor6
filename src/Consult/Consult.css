@@ -47,6 +47,15 @@
 
 .p_2 {
     font-weight: 800;
+    
+        text-align: center;
+        color: rgb(216, 216, 216);
+        font-size: clamp(1.5rem, 1vw, 2rem);
+        line-height: 50px;
+        font-family: 'Poppins';
+
+        
+    
 }
 
 .a_consult {
@@ -91,6 +100,10 @@
 
 @media (max-width: 700px) {
 
+    .body_consult{
+        height: 100%;
+    }
+
     .h2_consult {
         font-size: 2.5rem;
     }
@@ -105,13 +118,16 @@
          
     }
 
+    
+
     .text_consult {
-        width: 99%;
+        width:98%;
+        
         margin: 5px;
     }
 
     .div_consult {
-        height: 100%;
+        height: 90vh;
         
     }
 }
