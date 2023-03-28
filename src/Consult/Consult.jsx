@@ -1,6 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import { useInViewport } from "react-in-viewport";
 import { useTranslation } from "react-i18next";
+import { PopupButton, PopupWidget } from "react-calendly";
 
 import "../Consult/Consult.css";
 
@@ -50,20 +51,20 @@ function Consult() {
     <body id="about" className="body_consult">
       <div className="div_consult">
         <div ref={sectionRef} className="text_consult">
-          <h2 className="h2_consult">Consultancy</h2>
+          <h2 className="h2_consult">Discovery Meeting</h2>
           <p className="p_consult">
-            Limited time offer: We’re gifting a $500 USD 30-minute consultation
-            during March, where you’ll have the oportunity to access to
-            personalized digital marketing advice with our experts, to get more
-            info click the button below!
+            <p className="p_2">Limited time offer: </p> We’re gifting a 30
+            minute consultation during March, where you’ll have the opportunity
+            to access to personalized digital marketing advice with our experts,
+            to get more info click the button below!
           </p>
-          <a
-            href="https://forms.gle/smYr32Ap27HTQMPC9"
-            target="_blank"
-            className="a_about"
-          >
-            Get started
-          </a>
+          <PopupButton
+            className="a_consult"
+            text="Get Started"
+            url="https://calendly.com/reforce/30min"
+            rootElement={document.getElementById("root")}
+          />
+          ;
         </div>
       </div>
     </body>

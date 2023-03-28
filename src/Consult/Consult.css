@@ -45,6 +45,10 @@
     
 }
 
+.p_2 {
+    font-weight: 800;
+}
+
 .a_consult {
     text-decoration: none;
     cursor: pointer;
@@ -76,6 +80,9 @@
     transition: all .25s ease-in-out;
 }
 
+.popup_ca {
+    opacity: 1;
+}
 .fade {
     opacity: 1;
     transform: translateY(0);
