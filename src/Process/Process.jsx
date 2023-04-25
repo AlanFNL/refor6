@@ -73,7 +73,7 @@ function Process() {
         });
       },
       {
-        threshold: 0.5, // trigger the callback when the target element is at least 50% visible
+        threshold: 0.1, // trigger the callback when the target element is at least 50% visible
       }
     );
 

@@ -114,13 +114,14 @@ background: linear-gradient(247deg, rgba(83,2,80,1) 0%, rgba(80,5,125,0.75) 50%,
 .video_container {
     position: fixed;
     top: 0;
-    left: 0;
+    left: 85%;
     width: 100%;
     height: 100%;
     z-index: 9999999;
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: center;
+    
     align-items: center;
     opacity: 0;
     pointer-events: none;
@@ -129,8 +130,8 @@ background: linear-gradient(247deg, rgba(83,2,80,1) 0%, rgba(80,5,125,0.75) 50%,
 
 .video_container .close{
     position: absolute;
-    top: 10%;
-    right: 25px;
+    top: 0%;
+    right: -70%;
     font-size: 40px;
     cursor: pointer;
 }
@@ -165,6 +166,10 @@ background: linear-gradient(247deg, rgba(83,2,80,1) 0%, rgba(80,5,125,0.75) 50%,
         width: 100vh;
        
 
+    }
+
+    .btn_metaverse, .modal {
+        z-index: 10000;
     }
   
     .body_metaverse {
@@ -207,10 +212,23 @@ background: linear-gradient(247deg, rgba(83,2,80,1) 0%, rgba(80,5,125,0.75) 50%,
         font-size: 1.2rem;
     }
 
+    .video_container {
+        left: 0%;
+    }
+
     .video_container video{
     
 
-        max-height: 55%;
+        max-height: 30%;
+        
+    }
+
+    .video_container .close{
+        position: absolute;
+       top: 10%;
+        right: 2%;
+        font-size: 70px;
+        cursor: pointer;
         
     }
 
